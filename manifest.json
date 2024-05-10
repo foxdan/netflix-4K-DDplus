@@ -24,7 +24,6 @@
 		],
 		"all_frames": true,
 		"js": ["content_script.js"],
-		//"css": ["Netflix.css"],
 		"run_at": "document_start"
 	}],
 	"web_accessible_resources": [{
@@ -47,7 +46,7 @@
 	"permissions": [
 		"storage",
 		"tabs",
-		"declarativeNetRequest"
+		"declarativeNetRequestWithHostAccess"
 	],
 	"host_permissions": [
 		"*://assets.nflxext.com/*/ffe/player/html/*",
