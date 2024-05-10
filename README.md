@@ -1,47 +1,20 @@
-thanks to https://github.com/truedread/netflix-1080p
+Minor tweaks of https://github.com/lkmvip/netflix-4K-DDplus to allow automatic
+extension conversion using xcode tools. Better alternative to *Boom3D-5.1 Audio
+for Netflix* which only enables HE-AAC 5.1 and is non-free.
 
+Build
+=====
 
-Microsoft Store:  
-https://microsoftedge.microsoft.com/addons/detail/oikpkeeoofpiapmjioabikmgjeaoggcn
+```
+rm -rf Netflix_Extension; xcrun safari-web-extension-converter --macos-only --no-open ./ && pushd ./Netflix_Extension && xcodebuild && popd
+```
 
-**This extension provides the following functions**  
-1, All languages (audio and sub,if any)      
-2, Automatically select best bitrate available   
-3, Use prk config for avc   
-4, Adjust the subtitle font for the new version   
-　　Use the old style for some subtitles:   
-　　　ro zh-Hans zh-Hant ko vi ar he hi th en es   
-    
-    
-    
--------------------------------------------------------------------------------------------------------  
+Usage
+=====
 
-  
-**In different hardware/software, your experience is different**  
-    
-4K or 1080p will be the defaults from now on and I will not change them again  
-Linux cannot use this extension because Netflix does not provide configuration for Linux browsers, You can change the OS or try to use other extensions.  
-Read more: https://help.netflix.com/node/30081  
-  
-  
-**In Win11 and edge browser(Non-portable)**  
-1, DDplus, Atmos(if any) Audio      
-2, Allows not using prk config for 4K (Lock to 12000k, SDR only)   
-    
-    
-  
-**Other OS And Browser(Includes portable edge)**  
-1, HE-AAC Audio 5.1 (lower than DDplus)   
-2, AV1, VP9, AVC, and AVChigh, can be selected   
-  
-  
-    
-ATMOS is very, very amazing  
-https://www.netflix.com/search?q=ATMOS  
-enjoy
-    
-    
--------------------------------------------------------------------------------------------------------
-     
-![image](img/n1.png)
-![image](img/n2.png)
+Enable unsigned extentions, enable `HE-AAC` option, spatial audio will now be
+available and work with your AirPods.
+
+Automatically select best bitrate also working as expected.
+
+All other features are unknown compatibility wise.
